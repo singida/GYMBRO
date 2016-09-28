@@ -64,14 +64,30 @@ header {
   display: block;
   background-size: cover;
   padding-top: 1.5625em;
+/*  clear: both;*/
+/*  padding-left: 1.5625em;*/
+}
+
+.navbar {
+  font-size: 1.5em;
+  background: white;
+  opacity: .5;
   padding-left: 1.5625em;
+  width: 100%;
+  display: inline-block;
+}
+
+.navbar ul li {
+  padding: .5em;
+  background: white;
+  float: right;
 }
 
 h1 {
   font-size: 2.5em;
   text-align: left;
   color: #F4F4EF;
-  margin: 1.75em 2em 0 0;
+  margin: 1.75em 2em 0 2em;
   padding-right: 2.5em;
 }
 
@@ -82,21 +98,26 @@ h2 {
 }
 
 .apple {
-  padding: 1em 1em;
+  padding: 2em 2em;
 }
 
 .google {
-  padding: 1em 1em;
+  padding: 2em 2em;
 }
 
 #hero {
   height: 25em;
   background-color: #ACBEBE;
-  display: block;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 #hero h2 {
   color: #A01D26;
+  float: left;
+  padding-top: 1.5em;
 }
 
 /*#hero ul {
@@ -112,25 +133,38 @@ h2 {
   text-align: left;
   color: #A01D26;
   font-family: 'Gobold thin';
+  margin-right: 1.5em;
+  padding-top: 3em;
+}
+
+.features li {
+  display: inline;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .phone {
   float: left;
   display: inline-block;
+  margin: 2em 2em;
+  clear: both;
 }
 
 .icon {
   color: #A01D26;
+  padding-right: .5em;
 }
 
 #reviews {
-  display: inline-block;
-}
-
-#barbell {
+  background: url(../images/barbello.png) no-repeat top center;
+  display: flex;
+  justify-content: center;
   background-size: cover;
-  width: 100%;
-  opacity: .5;
 }
 
 .button {
@@ -151,12 +185,31 @@ h2 {
 
 #reviews h2 {
   color: #A01D26;
+  padding: 1em 0;
+  width: 40%;
+}
+
+.review1 {
+  width: 45%;
+  float: right;
+}
+
+.review2 {
+  width: 45%;
+  float: left;
+}
+
+.review3 {
+  width: 100%;
+  text-align: center;
+  float: right;
 }
 
 .stars {
   display: block;
   margin: auto;
-  width: 40%;
+  width: 35%;
+  opacity: .5;
 }
 
 blockquote {
@@ -164,15 +217,16 @@ blockquote {
   font-size: 1.5em;
   font-style: italic;
   text-align: center;
-  width: 65%;
+  width: 75%;
   margin: 0 auto;
   padding: 1em 1em;
   color: #A01D26;
 }
 
 blockquote span {
-  display: block;
+  display: inline-block;
   font-style: normal;
+  font-size: .5em;
 }
 
 #bottom-cta {
@@ -194,7 +248,16 @@ footer ul li {
 }
 
 footer a {
-    color: #F4F4EF;
+  color: #F4F4EF;
+}
+
+footer img {
+  padding: .5em;
+}
+
+.social {
+  height: 3em;
+  width: 3em;
 }
 
 footer p {
