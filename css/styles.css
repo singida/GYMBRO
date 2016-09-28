@@ -1,0 +1,203 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box; /* Firexfox */
+  -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 .625em .625em; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 .625em .625em 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  color: #F4F4EF;
+  font-size: 1.625em;
+  line-height: 1.4;
+  color: #ACBEBE;
+  font-family: 'Gobold';
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+
+.container {
+  margin: 0 auto;
+}
+
+header {
+  height: 30em;
+  background: url(../images/womanweight.jpg) no-repeat top center;
+  display: block;
+  background-size: cover;
+  padding-top: 1.5625em;
+  padding-left: 1.5625em;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: left;
+  color: #F4F4EF;
+  margin: 1.75em 2em 0 0;
+  padding-right: 2.5em;
+}
+
+h2 {
+  font-size: 2.5em;
+  text-align: left;
+  margin-left: 2.5em;
+}
+
+.apple {
+  padding: 1em 1em;
+}
+
+.google {
+  padding: 1em 1em;
+}
+
+#hero {
+  height: 25em;
+  background-color: #ACBEBE;
+  display: block;
+}
+
+#hero h2 {
+  color: #A01D26;
+}
+
+/*#hero ul {
+  justify-content: left;
+  float: right;
+}*/
+
+#hero ul li {
+  float: right;
+  display: inline-block;
+  list-style: none;
+  font-size: 1.5em;
+  text-align: left;
+  color: #A01D26;
+  font-family: 'Gobold thin';
+}
+
+.phone {
+  float: left;
+  display: inline-block;
+}
+
+.icon {
+  color: #A01D26;
+}
+
+#reviews {
+  display: inline-block;
+}
+
+#barbell {
+  background-size: cover;
+  width: 100%;
+  opacity: .5;
+}
+
+.button {
+  border-radius: .3125em;
+  padding: .5em .5em;
+  width: 25%;
+  font-size: 1.75em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.maroon {
+  background: #ACBEBE;
+  color: #F4F4EF;
+}
+
+#reviews h2 {
+  color: #A01D26;
+}
+
+.stars {
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+
+blockquote {
+  font-family: 'Gobold thin';
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  padding: 1em 1em;
+  color: #A01D26;
+}
+
+blockquote span {
+  display: block;
+  font-style: normal;
+}
+
+#bottom-cta {
+  background: #A01D26;
+  padding: 2.0625em 0 2.8125em;
+  text-align: center;
+}
+
+footer {
+  background: #20232A;
+  padding: 1.0625em 0 1.8125em;
+  text-align: center;
+}
+
+footer ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 1.625em 1.6875em;
+}
+
+footer a {
+    color: #F4F4EF;
+}
+
+footer p {
+  font-size: 1.125em;
+  color: #A01D26;
+}
