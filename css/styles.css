@@ -126,7 +126,7 @@ h1 {
 
 h2 {
   font-size: 2.5em;
-  text-align: left;
+  text-align: left; 
   margin-left: 2.5em;
 }
 
@@ -147,6 +147,7 @@ h2 {
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
+  width: 100%;
 }
 
 #hero h2 {
@@ -186,14 +187,19 @@ h2 {
 }
 
 .phone {
-  float: left;
+  float: left; 
   display: inline-block;
   margin: 1em 2em 4em 4em;
   clear: both;
+  width: auto;
+}
+
+p.readmore {
+  text-decoration: none;
 }
 
 .leadParagraph {
-  width: 70%;
+  width: 75%;
   text-align: center;
 }
 
@@ -203,46 +209,101 @@ h2 {
 }
 
 .play {
-  width: 35%;
+  width: 100%;
   height: auto;
 /*  float: left;*/
-  text-align: center;
+  text-align: left;
   clear: both;
 }
 
 .favorite {
-  width: 35%;
+  width: 100%;
   height: auto;
-/*  float: right;*/
-  text-align: center;
-  padding-right: .75em;
+/*  float: right;**/
+  text-align: left;
+/*  padding-right: .75em;*/
 }
 
 .voice {
-  width: 35%;
+  width: 100%;
   height: auto;
 /*  float: left;*/
-/*  text-align: center;*/
+  text-align: left;
 }
 
 .beacon {
-  width: 35%;
+  width: 100%;
   height: auto;
 /*  float: right;*/
-  text-align: center;
-  padding-right: .75em;
+  text-align: left;
+/*  padding-right: .75em;*/
 }
 /*.readmore {
   margin-left: ;
-}*/
+}
 
 /*.readless {
   margin-left: 
 }*/
 
-.caption {
+#show-this-on-click {
+  font-size: .65em;
+  width: 100%;
+}
+
+#show-this-on-click2 {
+  font-size: .65em;
+  width: 100%;
+}
+
+#show-this-on-click3 {
+  font-size: .65em;
+  width: 100%;
+}
+
+#show-this-on-click4 {
+  font-size: .65em;
+  width: 100%;
+}
+
+p.readless {
+  font-size: .5em;
+}
+
+p.readless2 {
+  font-size: .5em;
+}
+
+p.readless3 {
+  font-size: .5em;
+}
+
+p.readless4 {
+  font-size: .5em;
+}
+
+p.readmore {
+  font-size: .5em;
+}
+
+p.readmore2 {
+  font-size: .5em;
+}
+
+p.readmore3 {
+  font-size: .5em;
+}
+
+p.readmore4 {
+  font-size: .5em;
+}
+
+span.caption {
+  width: 25%;
   text-align: center;
   color: #20232A;
+  float: left;
+  padding: 1.5em 1em 1em 4em;
 }
 
 .hideMe {
@@ -266,9 +327,6 @@ h2 {
   display: block;
   margin: 0 auto;
   text-decoration: none;
-}
-
-.maroon {
   background: #ACBEBE;
   color: #F4F4EF;
 }
@@ -344,7 +402,7 @@ a.top {
 #sticky-social {
    left: 0;
    position: fixed;
-   top: 12.375em;
+   top: 10.375em;
 }
 #sticky-social a {
    background: #333;

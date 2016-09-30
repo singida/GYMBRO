@@ -8,8 +8,8 @@ $(document).ready(function(){
 
     $(".button").hover(function() {
     	$(this).css('background-color', '#20232A');
-    	}, function() {
-    	$(this).css("background-color", '#ACBEBE');
+    	}, function(){
+    	$(this).css('background-color', '#ACBEBE');
     });
 
 
