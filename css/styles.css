@@ -56,6 +56,7 @@ body {
 
 .container {
   margin: 0 auto;
+  position: relative;
 }
 
 header {
@@ -69,7 +70,7 @@ header {
 }
 
 .navbar {
-  font-size: 1.5em;
+  font-size: 1em;
   background: white;
   opacity: .5;
   padding-left: 1.5625em;
@@ -91,10 +92,15 @@ nav {
   float: left;
 }
 
+#logo {
+  padding-left: 4em;
+}
+
 .navbar ul li {
   padding: .5em;
   background: white;
   float: left;
+  padding-right: 1.5em;
 }
 
 div.navbar a {
@@ -102,12 +108,12 @@ div.navbar a {
   color: #F4F4EF;
   border: 1px solid #A01D26;
   border-radius: 1.563em;
-  padding: .25em;
+  padding: .55em;
   background: #A01D26;
 }
 
 div.navbar li {
-  margin-top: .65em;
+  margin-top: 1.5em;
 }
 
 h1 {
@@ -126,14 +132,16 @@ h2 {
 
 .apple {
   padding: 2em 2em 2em 8em;
+  height: auto;
 }
 
 .google {
   padding: 2em 2em;
+  zoom: 50%;
 }
 
 #hero {
-  height: 25em;
+  height: auto;
   background-color: #ACBEBE;
   display: flex;
   justify-content: center;
@@ -145,6 +153,7 @@ h2 {
   color: #A01D26;
   float: left;
   padding-top: 1.5em;
+  display: block;
 }
 
 /*#hero ul {
@@ -183,9 +192,61 @@ h2 {
   clear: both;
 }
 
+.leadParagraph {
+  width: 70%;
+  text-align: center;
+}
+
 .icon {
   color: #A01D26;
   padding-right: .5em;
+}
+
+.play {
+  width: 35%;
+  height: auto;
+/*  float: left;*/
+  text-align: center;
+  clear: both;
+}
+
+.favorite {
+  width: 35%;
+  height: auto;
+/*  float: right;*/
+  text-align: center;
+  padding-right: .75em;
+}
+
+.voice {
+  width: 35%;
+  height: auto;
+/*  float: left;*/
+/*  text-align: center;*/
+}
+
+.beacon {
+  width: 35%;
+  height: auto;
+/*  float: right;*/
+  text-align: center;
+  padding-right: .75em;
+}
+/*.readmore {
+  margin-left: ;
+}*/
+
+/*.readless {
+  margin-left: 
+}*/
+
+.caption {
+  text-align: center;
+  color: #20232A;
+}
+
+.hideMe {
+  display: none;
 }
 
 #reviews {
@@ -193,6 +254,7 @@ h2 {
   display: flex;
   justify-content: center;
   background-size: cover;
+  height: 37em;
 }
 
 .button {
@@ -245,7 +307,7 @@ h2 {
 }
 
 blockquote {
-  font-family: 'Gobold thin';
+  font-family: 'Gobold thin', sans-serif;
   font-size: 1.5em;
   font-style: italic;
   text-align: center;
@@ -265,6 +327,18 @@ blockquote span {
   background: #A01D26;
   padding: 2.0625em 0 2.8125em;
   text-align: center;
+}
+
+a.top {
+  text-align: left;
+  text-decoration: none;
+  padding-bottom: 0;
+  font-family: 'Gobold');
+  vertical-align: baseline;
+  float: right;
+  color: #20232A;
+  padding-top: 8em;
+  padding-right: .5em;
 }
 
 #sticky-social {
@@ -293,21 +367,21 @@ blockquote span {
 #sticky-social a:hover span {
    left: 100%;
 }
-#sticky-social a[class*="home"],
-#sticky-social a[class*="home"]:hover,
-#sticky-social a[class*="home"] span { background: #A01D26; }  
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
 
-#sticky-social a[class*="features"],
-#sticky-social a[class*="features"]:hover,
-#sticky-social a[class*="features"] span { background: #ACBEBE; }
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }  
 
-#sticky-social a[class*="reviews"],
-#sticky-social a[class*="reviews"]:hover,
-#sticky-social a[class*="reviews"] span { background: #20232A; }
+#sticky-social a[class*="instagram"],
+#sticky-social a[class*="instagram"]:hover,
+#sticky-social a[class*="instagram"] span { background: #675144; }  
 
-#sticky-social a[class*="sign-up"],
-#sticky-social a[class*="sign-up"]:hover,
-#sticky-social a[class*="sign-up"] span { background: #A01D26; }   
+#sticky-social a[class*="youtube"],
+#sticky-social a[class*="youtube"]:hover,
+#sticky-social a[class*="youtube"] span { background: #cc2127; }  
 
 footer {
   background: #20232A;
